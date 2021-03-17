@@ -1,7 +1,7 @@
 function Title() {
 
   return(
-    <div class="title-wrapper">
+    <div class="title-wrapper" style={{  }}>
       <div class="title-row">
         <div class="title-column">
           <div class="title-logo"></div>

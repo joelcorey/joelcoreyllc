@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Title from '../component/Title/Title'
+import Title from '../component/Title'
+import Social from '../component/Social'
 
 export default function Home() {
   return (
@@ -12,12 +13,11 @@ export default function Home() {
 
       <main className={styles.main}>
       
-        <Title />
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+				<div style={{ display: 'flex', flexDirection: 'row' }}>
+					<Title />
+					<Social />
+				</div>
+        
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
