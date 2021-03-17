@@ -3,7 +3,7 @@ import Icon from './Icon'
 function Social(props) {
 
 	return (
-		<div style={{display: 'flex', flexDirection: 'row', alignItems: 'center', margin: '25px 0 0 25px'}}>
+		<div style={{display: 'flex', flexDirection: 'row', alignItems: 'center', margin: '-13px 0 0 55px'}}>
 			<Icon 
 				path='/img/icons8-linkedin.svg'
 				width='50'
