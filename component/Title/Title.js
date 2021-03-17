@@ -7,7 +7,7 @@ function Title() {
           <div class="title-logo"></div>
         </div>
         <div class="title-column">
-          <h3 class="title pacifico">joelcorey</h3>
+          <h3 class="title">joelcorey</h3>
         </div>
       </div>
       <div class="title-line"></div>
