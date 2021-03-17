@@ -15,7 +15,7 @@ export default function Home() {
       
 				<div style={{ display: 'flex', flexDirection: 'row' }}>
 					<Title />
-					<Social />
+					<Social />	
 				</div>
         
 
@@ -49,6 +49,9 @@ export default function Home() {
           </a>
         </div>
       </main>
+
+			<p>This website is brand spankin' new, please allow it time to grow and evolve if you are just viewing it now.</p>
+
 
       <footer className={styles.footer}>
         <a
