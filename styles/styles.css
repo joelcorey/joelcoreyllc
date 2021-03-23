@@ -1,23 +1,13 @@
-.title-wrapper {
-	/* margin: 25% auto; */
-	align-items: flex-end;
-	justify-content: flex-end;
-
-}
-
 .title-row {
 	display: flex;
+	font-family: 'Pacifico';
+	font-size: 8vh;
 }
 
 .title-column {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-}
-
-.title-wrapper {
-	font-family: 'Pacifico';
-	font-size: 8vh;
 }
 
 .title-logo {
