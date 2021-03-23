@@ -13,7 +13,7 @@ export default function Home() {
 
       <main className={styles.main}>
       
-				<div style={{ display: 'flex', flexDirection: 'row' }}>
+				<div className='sm:flex sm:flex-column lg:flex-row'>
 					<Title />
 					<Social />	
 				</div>
