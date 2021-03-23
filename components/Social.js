@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Icon from './Icon'
 
 function Social(props) {
@@ -20,13 +21,15 @@ function Social(props) {
 					height='auto'
 				/>
 			</a>
-			<a href="mailto:joelcorey@fastmail.com">
-				<Icon 
-					path='/img/at-sign-3010.svg'
-					width={width}
-					height='auto'
-				/>
-			</a>
+			<Link href="/contact"> 
+				<a>
+					<Icon 
+						path='/img/at-sign-3010.svg'
+						width={width}
+						height='auto'
+					/>
+				</a>
+			</Link>
 		</div>
 	)
 }

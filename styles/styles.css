@@ -16,8 +16,9 @@
 	background: no-repeat center;
 	background-image: url("/img/arrow.svg");
 	background-size: contain;
-	width: 18vw;
-	height: 18vh;
+	width: 12vw;
+	height: 12vh;
+	margin: 20px;
 }
 
 .contact-form-light-text {

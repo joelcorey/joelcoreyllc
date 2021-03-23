@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import Title from '../components/Title';
 import ContactForm from '../components/ContactForm';
 
