@@ -16,10 +16,6 @@
 	background: no-repeat center;
 	background-image: url("/img/arrow.svg");
 	background-size: contain;
-	font-size: 10vh;
-	/* margin: 0 0 0 5vw;
-	margin-bottom: -1vh; */
-	width: 10vw;
-	height: 10vh;
-	/* border: 1px solid black; */
+	width: 18vw;
+	height: 18vh;
 }
