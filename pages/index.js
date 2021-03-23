@@ -13,7 +13,7 @@ export default function Home() {
 
       <main className={styles.main}>
       
-				<div className='sm:flex sm:flex-column lg:flex-row w-screen justify-center'>
+				<div className='sm:flex sm:flex-column lg:flex-row justify-center'>
 					<Title />
 					<Social />	
 				</div>
