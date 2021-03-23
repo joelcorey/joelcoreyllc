@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Title from '../component/Title'
-import Social from '../component/Social'
+import Title from '../components/Title'
+import Social from '../components/Social'
 
 export default function Home() {
   return (
