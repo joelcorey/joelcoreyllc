@@ -1,6 +1,9 @@
+.title-text {
+	font-family: 'Pacifico';
+}
+
 .title-row {
 	display: flex;
-	font-family: 'Pacifico';
 	font-size: 8vh;
 }
 

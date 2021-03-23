@@ -1,12 +1,12 @@
 function Title() {
 
   return(
-		<div className="title-row">
+		<div className="flex items-center justify-center m-4">
 			<div className="title-column">
 				<div className="title-logo"></div>
 			</div>
 			<div className="title-column">
-				<h3 className="title">joelcorey</h3>
+				<h1 className="title-text text-5xl">joelcorey</h1>
 			</div>
 		</div>
   )
