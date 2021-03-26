@@ -21,3 +21,7 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 ## Sites for inspiration
 
 https://netrixdigital.com/featured-projects
+
+## Technical guides and learning
+
+https://docs-git-success-185-add-nextjs-sengrid-guide.zeit.now.sh/guides/deploying-nextjs-nodejs-and-sendgrid-with-zeit-now
