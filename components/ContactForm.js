@@ -95,7 +95,7 @@ export default function ContactForm(props) {
 							<button 
 								type="button"
 								type="submit"
-								class="shadow bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+								class="shadow bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none font-bold py-2 px-4 rounded"
 							>
 								{!status.submitting
 									? !status.submitted
@@ -107,12 +107,15 @@ export default function ContactForm(props) {
 					<div class="md:w-2/3"></div>
 				</div>
 			</form>
-			{status.info.error && (
-				<div className="error">Error: {status.info.msg}</div>
-			)}
-			{!status.info.error && status.info.msg && (
-				<div className="success">{status.info.msg}</div>
-			)}
+
+			<div>
+				{status.info.error && (
+					<div className="error">Error: {status.info.msg}</div>
+				)}
+				{!status.info.error && status.info.msg && (
+					<div className="success">{status.info.msg}</div>
+				)}
+			</div>
 
 		</div>
 	)

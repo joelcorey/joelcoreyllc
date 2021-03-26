@@ -7,17 +7,20 @@ export default async function(request, response) {
 
 	const content = {
 		to: ['hello@joelcorey.com'],
-		from: email,
+		from: ['hello@joelcorey.com'],
 		subject: `${email} - joelcorey.com contact form!`,
 		text: message,
 		html: `<p>${message}</p>`
 	}
 
-	try {
-		await sendgrid.send(content)
-		response.status(200).send('Message sent successfully.')
-	} catch (error) {
-		console.log('ERROR', error)
-		response.status(400).send('Messasge not sent.')
-	}
+	console.log(request.body)
+
+	sendgrid
+  .send(content)
+  .then(() => {}, error => {
+    if (error.response) {
+			console.error(error);
+      console.error(error.response.body)
+    }
+  });
 }

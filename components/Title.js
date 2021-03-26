@@ -7,7 +7,7 @@ function Title() {
 			<div>
 				<Link href="/">
 					<a>
-						<div className="title-logo"></div>
+						<div className="title-logo shadowed"></div>
 					</a>
 				</Link>
 			</div>
