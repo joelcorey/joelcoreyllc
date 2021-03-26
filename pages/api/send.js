@@ -7,20 +7,41 @@ export default async function(request, response) {
 
 	const content = {
 		to: ['hello@joelcorey.com'],
-		from: ['hello@joelcorey.com'],
+		from: 'hello@joelcorey.com',
 		subject: `${email} - joelcorey.com contact form!`,
 		text: message,
 		html: `<p>${message}</p>`
 	}
 
-	console.log(request.body)
+	// sendgrid
+  // .send(content)
+	// 	.then(response => {
+	// 		response.statusCode = 200
+	// 		response.setHeader('Content-Type', 'application/json');
+	// 		response.setHeader('Cache-Control', 'max-age=180000');
+	// 		response.end(JSON.stringify(response))
+	// 		resolve();
+	// 	})
+  // 	.catch(error => {
+	// 		if (error.response) {
+	// 			console.error(error);
+	// 			console.error(error.response.body)
+	// 		} 
+	// 		res.json(error);
+	// 		res.status(405).end();
+	// 		return resolve();
+  // });
 
-	sendgrid
-  .send(content)
-  .then(() => {}, error => {
-    if (error.response) {
+	try {
+    await sendgrid.send(content)
+    response.status(200).send('Message sent successfully.')
+  } catch (error) {
+		if (error.response) {
 			console.error(error);
-      console.error(error.response.body)
-    }
-  });
+			console.error(error.response.body)
+		} 
+
+    console.log('ERROR', error)
+    response.status(400).send('Message not sent.')
+  }
 }
