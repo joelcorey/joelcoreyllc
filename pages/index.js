@@ -66,7 +66,3 @@ export default function Home() {
     </div>
   )
 }
-
-/* 
-
-I recently applied at Fibre for a Learning Management job. I am reaching out to connect and learn here on LinkedIn. Thank you! */
