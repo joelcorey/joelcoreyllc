@@ -1,4 +1,6 @@
-export default function ContactForm() {
+export default function ContactForm(props) {
+
+const { handleOnChange, handleOnSubmit } = props
 
 return (
 	<div className="flex flex-column justify-center m-10">
