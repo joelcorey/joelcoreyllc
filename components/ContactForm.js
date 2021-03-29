@@ -106,16 +106,18 @@ export default function ContactForm(props) {
 						</div>
 					<div class="md:w-2/3"></div>
 				</div>
+
+				<div>
+					{status.info.error && (
+						<div className="error">Error: {status.info.msg}</div>
+					)}
+					{!status.info.error && status.info.msg && (
+						<div className="success">{status.info.msg}</div>
+					)}
+				</div>
 			</form>
 
-			<div>
-				{status.info.error && (
-					<div className="error">Error: {status.info.msg}</div>
-				)}
-				{!status.info.error && status.info.msg && (
-					<div className="success">{status.info.msg}</div>
-				)}
-			</div>
+			
 
 		</div>
 	)

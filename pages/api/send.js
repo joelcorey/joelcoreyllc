@@ -1,6 +1,8 @@
 const sendgrid = require('@sendgrid/mail')
 
 export default async function(request, response) {
+	console.log(process.env.SENDGRID_API_KEY)
+
 	sendgrid.setApiKey(process.env.SENDGRID_API_KEY)
 
 	const { email, message } = request.body
