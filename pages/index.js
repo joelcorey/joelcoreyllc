@@ -26,7 +26,7 @@ export default function Home() {
 
       <footer className={styles.footer}>
         <a
-          href="https://github.com/joelcorey/portfolio"
+          href="https://springtreedigital.com"
           target="_blank"
           rel="noopener noreferrer"
         >
