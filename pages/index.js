@@ -7,13 +7,13 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>joelcorey</title>
+        <title>Junk Removal</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
 
-				<div className='sm:flex sm:flex-column lg:flex-row justify-center'>
+				<div className='flex flex-column justify-center'>
 					<p>We do junk, garbage, and debris removal.</p>
 					<p>Contact us at 503-884-7615</p>
 
